@@ -18,6 +18,7 @@ export class ProductService {
     const products = await this.provider.search({
       collection: 'products',
       queryBy: 'name',
+      sortBy: 'ratings:asc',
       searchTerm: input.term,
     });
 

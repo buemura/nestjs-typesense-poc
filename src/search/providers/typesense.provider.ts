@@ -25,6 +25,7 @@ export class TypesenseProvider implements SearchEngineProvider {
       .search({
         query_by: params.queryBy,
         q: params.searchTerm,
+        sort_by: params.sortBy,
       });
 
     console.log('res', res);
